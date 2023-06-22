@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer and Stopwatch</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/0b7a17eedf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <------------------  left side ----------------->
+    <div class="container flex">
+      <div class="left">
+        <div class="wrapper">
+          <h1>Stopwatch</h1>
+          <p>
+            <span class="digit" id="hr"> 00</span>
+            <span class="txt">Hr</span>
+            <span class="digit mins" id="min"> 00</span>
+            <span class="txt">Min</span>
+            <span class="digit sec" id="sec"> 00</span>
+            <span class="txt">Sec</span>
+            <span class="digit tens" id="count"> 00</span>
+          </p>
+          <br />
+          <button class="btn-start btn-box" id="start">
+            <i class="fa-solid fa-play"></i>Start
+          </button>
+          <button class="btn-stop btn-box" id="stop">
+            <i class="fa-solid fa-pause"></i>Stop
+          </button>
+          <button class="btn-reset btn-box" id="reset">
+            <i class="fa-solid fa-arrow-rotate-left"></i>Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- <-------------------right side----------------->
+
+      <div class="right">
+        <div class="wrapper">
+          <h1 class="new1">Timer</h1>
+          <p id="new">
+            <span class="digit mins" id="minutes"> 00</span>
+            <span class="txt">Min</span>
+            <span class="digit sec" id="seconds"> 00</span>
+            <span class="txt">Sec</span>
+          </p>
+          <br />
+          <button class="btn-start btn-box" id="start " onclick="start()">
+            <i class="fa-solid fa-play"></i>Start
+          </button>
+          <a id="reset" class="btn-start btn-box" href=""
+            ><i class="fa-solid fa-arrow-rotate-left"></i>Reset</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
